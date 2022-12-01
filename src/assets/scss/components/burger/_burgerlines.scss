@@ -1,0 +1,30 @@
+.blines {
+    &__line {
+        width: 22px;
+        height: 1px;
+        background-color: #000;
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+    }
+
+    &__topactive {
+        transform: rotate(45deg);
+        transition: transform 0.5s;   
+    }
+    &__toppass {
+        transform: rotate(0deg);
+        transition: transform 0.5s;  
+    }
+    &__botactive {
+        transform: rotate(-45deg);
+        transition: transform 0.5s;   
+    }
+    &__botpass {
+        transform: rotate(0deg);
+        transition: transform 0.5s;  
+    }
+
+}
+
+

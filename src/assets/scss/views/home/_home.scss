@@ -1,0 +1,13 @@
+.home {
+    position: relative;
+    &__burger {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 100px;
+        height: 300px;
+        @media (max-width:576px) {
+           display: block;
+        }
+    }
+}

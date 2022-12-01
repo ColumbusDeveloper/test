@@ -1,0 +1,19 @@
+.burgermain {
+    position: relative;
+    overflow: hidden;
+    &__lines {
+        display: inline-block;
+        
+    }
+    &__body {
+        position: absolute;
+        width: 100%;
+        top: 21%;
+        transform: translateX(300px);
+        transition: transform 1s;  
+    }
+    &__visible {
+        transform: translateX(0);
+        transition: transform 1s;  
+    }
+}

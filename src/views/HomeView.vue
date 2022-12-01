@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <MainText msg="Welcome to Your Vue.js App"/>
+    <!-- <MainText msg="Welcome to Your Vue.js App"/> -->
+    <BurgerMain class="home__burger"
+    :page="page"
+    />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import MainText from '@/components/home/MainText.vue'
+// import MainText from '@/components/home/MainText.vue'
+import BurgerMain from '@/components/burger/BurgerMenuMain.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    MainText,
+    // MainText,
+    BurgerMain,
+  },
+  data () {
+    return {
+      page:'',
+    }
+  },
+  beforeMount () {
+    this.page = this.$route.name
   }
 }
 </script>
