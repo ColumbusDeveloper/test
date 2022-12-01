@@ -1,9 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/what">What</router-link> |
-    <router-link to="/where">Where</router-link> |
-    <router-link to="/who">Who</router-link> |
+    <router-link to="/page">Page</router-link>
   </nav>
   <router-view/>
 </template>

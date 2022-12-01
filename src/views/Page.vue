@@ -7,5 +7,5 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/scss/views/what/what';
+@import '../assets/scss/views/page/page';
 </style>
