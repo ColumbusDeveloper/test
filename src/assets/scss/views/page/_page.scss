@@ -4,14 +4,12 @@
         font-size: 30px;
     }
     &__burger {
-        display: none;
+    
         position: absolute;
         right: 0;
         top:0;
         width: 100px;
         height: 300px;
-        @media (max-width:576px) {
-            display: block;
-        }
+        
     }
 }

@@ -23,9 +23,11 @@ export default {
       page:'',
     }
   },
+  
   beforeMount () {
     this.page = this.$route.name
-  }
+  },
+  
 }
 </script>
 

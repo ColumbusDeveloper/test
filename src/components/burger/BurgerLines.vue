@@ -1,5 +1,6 @@
 <template>
     <div class="blines"
+    ref="bmicon"
     @click="press"
     >
         <div class="blines__line"
@@ -38,7 +39,26 @@ name: 'BurgerLines',
                 this.$refs.linetop.style = 'margin-bottom:7px';
             }
             this.$emit('act', this.pressed)
+        },
+        dropdown (e) {
+            let icon = this.$refs.bmicon
+            let a = e.composedPath().includes(icon)
+            if (!a) {
+                this.pressed = false
+                this.$emit('act', this.pressed)
+            }
+            if (this.pressed) {
+                this.$refs.linetop.style = 'margin-bottom:-1px'; 
+            } else {
+                this.$refs.linetop.style = 'margin-bottom:7px';
+            }
         }
+    },
+    created () {
+        document.addEventListener('click', this.dropdown)
+    },
+    unmounted () {
+        document.removeEventListener('click', this.dropdown)
     }
 }
 
