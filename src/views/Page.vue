@@ -1,6 +1,8 @@
 <template>
 <div class="page">
-    <!-- <h1 class="page__test">This is a PAGE</h1> -->
+    <h1 class="page__text"
+    :class="{page__textactive:action}"
+    >This is a PAGE</h1>
     <BurgerMain class="page__burger" 
     :page="page"
     />
@@ -21,11 +23,19 @@ export default {
   data () {
     return {
       page:'',
+      action:false,
+    }
+  },
+  methods: {
+    changeAction () {
+      this.action = !this.action
     }
   },
   beforeMount () {
     this.page = this.$route.name
-  }
+  },
+ 
+  
 }
 </script>
 
