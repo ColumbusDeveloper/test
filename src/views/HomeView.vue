@@ -1,7 +1,7 @@
 <template>
   <div class="home">
 
-    <img class="home__imgS" src="@/static/images/imgS.png" alt="S">
+    <HomeImgS class="home__imgS" />
     
     <BurgerMain class="home__burger"
     :page="page"
@@ -32,6 +32,8 @@
     </div>
 
     <CentralText class="home__centraltext" />
+
+    <HomeButtRound class="home__buttround" />
      
   </div>
 </template>
@@ -45,6 +47,7 @@ import NavRight from '@/components/home/HomeNavRight.vue'
 import StringRunDown from '@/components/home/StringRunDown.vue'
 import StringRunUp from '@/components/home/StringRunUp.vue'
 import CentralText from '@/components/home/HomeCentralText.vue'
+import HomeImgS from '@/components/home/HomeImgS.vue'
 
 export default {
   name: 'HomeView',
@@ -56,6 +59,7 @@ export default {
     StringRunDown,
     StringRunUp,
     CentralText,
+    HomeImgS,
   },
   data () {
     return {

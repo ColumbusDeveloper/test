@@ -13,6 +13,7 @@
     &__burger {
         display: none;
         position: absolute;
+        z-index: 4;
         right: 0;
         top:100px;
         width: 100px;
@@ -40,6 +41,7 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 3;
     }
     &__navcomp {
         @media (max-width:576px) {
@@ -100,6 +102,8 @@
         width: 90%;
         z-index: 2;
     }
+
+    
     
 
     
