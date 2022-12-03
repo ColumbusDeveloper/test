@@ -3,5 +3,8 @@
 .home {
     &__what {
         @include font16;
+        &:hover {
+            font-size: 20px;
+        }
     }
 }

@@ -1,16 +1,19 @@
 .blines {
+    &:hover &__line {
+        background-color: red;
+    }
     &__line {
         width: 22px;
         height: 1px;
         background-color: #000;
-        &:not(:last-child) {
-            margin-bottom: 7px;
-        }
+        
+        
     }
 
     &__topactive {
         transform: rotate(45deg);
-        transition: transform 0.5s;   
+        transition: transform 0.5s; 
+        
     }
     &__toppass {
         transform: rotate(0deg);

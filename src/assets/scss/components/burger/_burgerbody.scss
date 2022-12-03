@@ -1,3 +1,5 @@
+@import '../../main.scss';
+
 .burgerbody {
     display: flex;
     flex-direction: column;
@@ -8,5 +10,9 @@
         padding-bottom: 15px;
         cursor: pointer;
         width: 100%;
+        @include  font16    ;
+        &:hover {
+            font-size: 20px;
+        }
     }
 }

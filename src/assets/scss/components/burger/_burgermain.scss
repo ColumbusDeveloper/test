@@ -3,7 +3,8 @@
     overflow: hidden;
     &__lines {
         display: inline-block;
-        
+        cursor: pointer;
+      
     }
     &__body {
         position: absolute;

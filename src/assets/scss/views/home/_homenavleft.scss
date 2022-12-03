@@ -3,6 +3,9 @@
 .home {
     &__where {
         @include  font16;
+        &:hover {
+            font-size: 20px;
+        }
     }
    
     
