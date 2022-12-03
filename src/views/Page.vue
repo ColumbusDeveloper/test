@@ -1,17 +1,18 @@
 <template>
 <div class="page">
     <h1 class="page__text"
-    :class="{page__textactive:action}"
+    
     >This is a PAGE</h1>
     <BurgerMain class="page__burger" 
     :page="page"
+    
     />
 
 </div>
 </template>
 
 <script>
-
+import gsap from 'gsap'
 import BurgerMain from '@/components/burger/BurgerMenuMain.vue'
 
 export default {
@@ -27,13 +28,25 @@ export default {
     }
   },
   methods: {
-    changeAction () {
-      this.action = !this.action
+    setAct () {
+      this.action = false
     }
   },
+  
   beforeMount () {
     this.page = this.$route.name
   },
+  mounted () {
+    gsap.to(".page__text", {
+    duration: 1, 
+    x: 150, 
+    y: 100, 
+    ease: "none", 
+    });
+    
+  }
+  
+  
  
   
 }

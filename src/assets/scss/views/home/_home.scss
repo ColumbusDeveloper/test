@@ -2,12 +2,19 @@
 
 
 .home {
-    position: relative;
-    height: 100vh;
+    background-color:  #BEBEBE;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    
     &__burger {
         display: none;
         position: absolute;
         right: 0;
+        top:100px;
         width: 100px;
         height: 300px;
         @media (max-width:576px) {
@@ -39,4 +46,61 @@
            display: none;
         }
     }
+    &__movingtext {
+        margin-top: 40vh;
+        overflow: hidden;
+        transform: rotate(-37deg);
+        width: 141vw;
+        margin-left: -19vw;
+        @media (max-width:1024px) {
+            margin-top: 37vh;
+            transform: rotate(-39deg);
+            margin-left: -19vw;
+        }
+        @media (max-width:768px) {
+            margin-top: 40vh;
+            transform: rotate(-54deg);
+            width: 162vw;
+            margin-left: -31vw;
+        }
+        @media (max-width:576px) {
+            margin-top: 40vh;
+            transform: rotate(-55deg);
+            width: 208vw;
+            margin-left: -49vw;
+        }
+        @media (max-width:375px) {
+            margin-top: 46vh;
+            transform: rotate(-66deg);
+            width: 327vw;
+            margin-left: -118vw;
+        }
+        
+    }
+    &__imgS {
+        position:absolute;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        @media (max-width:768px) {
+            width: 75%;
+        }
+        @media (max-width:576px) {
+            width: 90%;
+        }
+    }
+    
+
+    
+   
+    
+
+    
+
+    
+
+
 }
+

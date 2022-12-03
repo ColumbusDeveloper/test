@@ -1,1 +1,9 @@
-@import '../../main.scss'
+@import '../../main.scss';
+
+.home {
+    &__where {
+        @include  font16;
+    }
+   
+    
+}

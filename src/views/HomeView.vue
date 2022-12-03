@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <!-- <MainText msg="Welcome to Your Vue.js App"/> -->
+
+    <img class="home__imgS" src="@/static/images/imgS.png" alt="S">
+    
     <BurgerMain class="home__burger"
     :page="page"
     />
@@ -16,25 +18,41 @@
     <NavRight 
     class="home__navright home__navcomp"
     />
-       
+
+    <div class="home__movingtext">
+  
+      <StringRunUp 
+      class="home__stringrun home__stringrunup"
+      />
+
+      <StringRunDown 
+      class="home__stringrun home__stringrundown"
+      />
+      
+    </div>
+     
   </div>
 </template>
 
 <script>
-// import MainText from '@/components/home/MainText.vue'
+
 import BurgerMain from '@/components/burger/BurgerMenuMain.vue'
 import NavLeft from '@/components/home/HomeNavLeft.vue'
 import NavBot from '@/components/home/HomeNavBot.vue'
 import NavRight from '@/components/home/HomeNavRight.vue'
+import StringRunDown from '@/components/home/StringRunDown.vue'
+import StringRunUp from '@/components/home/StringRunUp.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    // MainText,
+
     BurgerMain,
     NavLeft,
     NavBot,
     NavRight,
+    StringRunDown,
+    StringRunUp,
   },
   data () {
     return {
