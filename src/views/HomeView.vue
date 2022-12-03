@@ -30,6 +30,8 @@
       />
       
     </div>
+
+    <CentralText class="home__centraltext" />
      
   </div>
 </template>
@@ -42,17 +44,18 @@ import NavBot from '@/components/home/HomeNavBot.vue'
 import NavRight from '@/components/home/HomeNavRight.vue'
 import StringRunDown from '@/components/home/StringRunDown.vue'
 import StringRunUp from '@/components/home/StringRunUp.vue'
+import CentralText from '@/components/home/HomeCentralText.vue'
 
 export default {
   name: 'HomeView',
   components: {
-
     BurgerMain,
     NavLeft,
     NavBot,
     NavRight,
     StringRunDown,
     StringRunUp,
+    CentralText,
   },
   data () {
     return {

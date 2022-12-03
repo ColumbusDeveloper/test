@@ -1,0 +1,15 @@
+@import '../../main.scss';
+
+.home {
+    &__centraltext-box {
+        @include  font82;
+        text-align: center;
+    }
+    &__centraltext1 {
+        margin-top: -80px;
+        @media (max-width:1024px) {
+            margin-top: -60px;
+        }
+    }
+    
+}
