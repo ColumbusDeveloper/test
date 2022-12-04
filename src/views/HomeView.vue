@@ -36,6 +36,8 @@
     <HomeButtRound class="home__buttround" />
 
     <HomeLang class="home__lang" />
+
+    <HomeTopText />
      
   </div>
 </template>
@@ -51,6 +53,7 @@ import StringRunUp from '@/components/home/StringRunUp.vue'
 import CentralText from '@/components/home/HomeCentralText.vue'
 import HomeImgS from '@/components/home/HomeImgS.vue'
 import HomeLang from '@/components/home/HomeLang.vue'
+import HomeTopText from '@/components/home/HomeTopText.vue'
 
 export default {
   name: 'HomeView',
@@ -64,6 +67,7 @@ export default {
     CentralText,
     HomeImgS,
     HomeLang,
+    HomeTopText,
   },
   data () {
     return {
