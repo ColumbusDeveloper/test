@@ -5,22 +5,22 @@
         <div class="burgerbody__item"
         v-if="pageProp!=='home'"
         @click="$router.push({name:'home'})"
-        >Home</div>
+        ><p class="burgerbody__item-text">Home</p> </div>
 
         <div class="burgerbody__item"
         v-if="pageProp!=='page'"
         @click="$router.push({name:'page'})"
-        >Where</div>
+        ><p class="burgerbody__item-text">Where</p></div>
 
         <div class="burgerbody__item"
         v-if="pageProp!=='page'"
         @click="$router.push({name:'page'})"
-        >What</div>
+        ><p class="burgerbody__item-text">What</p></div>
 
         <div class="burgerbody__item"
         v-if="pageProp!=='page'"
         @click="$router.push({name:'page'})"
-        >Who</div>
+        ><p class="burgerbody__item-text">Who</p></div>
 
     </div>
 </template>

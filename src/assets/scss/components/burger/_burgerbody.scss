@@ -4,15 +4,18 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
-
+    &__item-text {
+        @include  font16    ;
+        transition: font-size 0.2s ease-in-out;
+        &:hover  {
+            font-size: 20px;           
+        }
+    }
     &__item {
         padding-top: 15px;
         padding-bottom: 15px;
         cursor: pointer;
-        width: 100%;
-        @include  font16    ;
-        &:hover {
-            font-size: 20px;
-        }
+        width: 100%;     
     }
+    
 }
