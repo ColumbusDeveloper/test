@@ -1,0 +1,12 @@
+@import '../../main.scss';
+
+.home {
+    &__what {
+        cursor: pointer;
+        @include font16;
+        transition: font-size 0.2s ease;
+        &:hover {
+            font-size: 20px;
+        }
+    }
+}

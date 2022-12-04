@@ -1,0 +1,19 @@
+.page{
+    position: relative;
+    
+    &__text {
+        font-size: 30px;
+        position: absolute;
+        left: -150px;
+    }
+   
+    &__burger {
+    
+        position: absolute;
+        right: 0;
+        top:100px;
+        width: 100px;
+        height: 300px;
+        
+    }
+}

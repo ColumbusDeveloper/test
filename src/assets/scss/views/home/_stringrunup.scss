@@ -1,0 +1,12 @@
+@import '../../main.scss';
+
+.stringrun {
+    @include fontRun;
+}
+
+#demo1 {
+    white-space: nowrap;
+    color: black;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
